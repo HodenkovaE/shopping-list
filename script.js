@@ -7,9 +7,9 @@ input.addEventListener ('keydown', function(event){
   const newItem = document.createElement('div');
   newItem.textContent = itemText;
 
-  if(event.key == 'Enter'){
+  if(event.key == 'Enter' && itemText != ''){
     items.append(newItem);
-    input.value= '';
+    input.value ='';
     }
 
   newItem.addEventListener('click', function() {  
